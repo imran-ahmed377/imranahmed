@@ -1,114 +1,492 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Your Portfolio</title>
-	<link rel="stylesheet" href="styles.css">
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<title>
+		Portfolio
+	</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
+	<style>
+		body {
+			margin: 0;
+			font-family: 'Roboto', sans-serif;
+			background-color: #1c1c1c;
+			color: #fff;
+		}
+
+		header {
+			text-align: center;
+			padding: 50px 0;
+			background-color: #333;
+		}
+
+		header img {
+			width: 100%;
+			max-height: 500px;
+			object-fit: cover;
+		}
+
+		header h1 {
+			font-size: 3em;
+			margin: 20px 0 10px;
+		}
+
+		header p {
+			font-size: 1.2em;
+			color: #aaa;
+		}
+
+		nav {
+			text-align: center;
+			padding: 20px 0;
+			background-color: #333;
+		}
+
+		nav a {
+			color: #fff;
+			margin: 0 15px;
+			text-decoration: none;
+			font-size: 1em;
+		}
+
+		.portfolio,
+		.resume,
+		.services,
+		.blog,
+		.contact {
+			padding: 50px 20px;
+			text-align: center;
+		}
+
+		.portfolio h2,
+		.resume h2,
+		.services h2,
+		.blog h2,
+		.contact h2 {
+			font-size: 2em;
+			margin-bottom: 20px;
+		}
+
+		.portfolio .categories,
+		.portfolio .items,
+		.resume .content,
+		.services .content,
+		.blog .content,
+		.contact .content {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.portfolio .categories a,
+		.services .content .service,
+		.blog .content .post,
+		.contact .content .form,
+		.contact .content .details {
+			background-color: #444444;
+			margin: 10px;
+			padding: 20px;
+			border-radius: 5px;
+			flex: 1 1 300px;
+			max-width: 300px;
+			text-align: left;
+		}
+
+		.portfolio .items .item,
+		.resume .content .section,
+		.services .content .service,
+		.blog .content .post {
+			background-color: #444;
+			margin: 10px;
+			padding: 20px;
+			border-radius: 5px;
+			flex: 1 1 300px;
+			max-width: 300px;
+		}
+
+		.portfolio .items .item img,
+		.blog .content .post img {
+			width: 100%;
+			border-radius: 5px;
+		}
+
+		.portfolio .items .item h3,
+		.resume .content .section h3,
+		.services .content .service h3,
+		.blog .content .post h3 {
+			font-size: 1.5em;
+			margin: 10px 0;
+		}
+
+		.portfolio .items .item p,
+		.resume .content .section p,
+		.services .content .service p,
+		.blog .content .post p {
+			font-size: 1em;
+			color: #aaa;
+		}
+
+		.contact .content .form input,
+		.contact .content .form textarea {
+			width: 100%;
+			padding: 10px;
+			margin: 10px 0;
+			border: none;
+			border-radius: 5px;
+		}
+
+		.contact .content .form button {
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			background-color: #555;
+			color: #fff;
+			cursor: pointer;
+		}
+
+		footer {
+			text-align: center;
+			padding: 20px 0;
+			background-color: #333;
+		}
+
+		footer p {
+			margin: 10px 0;
+			color: #aaa;
+		}
+
+		footer .social a {
+			color: #fff;
+			margin: 0 10px;
+			text-decoration: none;
+			font-size: 1.5em;
+		}
+	</style>
 </head>
 
 <body>
 	<header>
-		<h1>Imran Ahmed</h1>
-		<h2>Student | Master of Applied Computing | University of Windsor</h2>
+		<img alt="Portrait of Imran Ahmed" height="500" src="https://avatars.githubusercontent.com/u/68174387?v=4"
+			width="1200" />
+		<h1>
+			Hello, I'm
+			<br />
+			Imran Ahmed
+		</h1>
+		<p>
+			AI &amp; ML ENGINEER
+		</p>
 	</header>
-
-	<section id="about">
-		<h3>About Me</h3>
-		<p>As a Master of Applied Computing student, I am eager to apply my skills and knowledge to the fields of
-			artificial intelligence, machine learning, deep learning, and data science. Throughout my studies and
-			various projects, I have gained experience in programming languages and developed my understanding of
-			algorithms, data structures, and software development principles. I am a proactive learner and always
-			looking to improve my skills.</p>
-	</section>
-
-	<section id="experience">
-		<h3>Experience</h3>
-		<ul>
-			<li>Field Marketing Representative at Kognitive Sales Solution (Present)</li>
-			<li>Student Intern at American International University Bangladesh (May 2022 - Aug 2022)</li>
-		</ul>
-	</section>
-
-	<section id="education">
-		<h3>Education</h3>
-		<ul>
-			<li>Master of Applied Computing, University of Windsor (Present)</li>
-			<li>Bachelor of Science in Computer Science and Engineering, American International University Bangladesh
-				(2018 - 2022)</li>
-		</ul>
-	</section>
-
-	<section id="certifications">
-		<h3>Certification Courses</h3>
-		<ul>
-			<li>Course Name, Institution (Year)</li>
-			<li>Course Name, Institution (Year)</li>
-		</ul>
-	</section>
-
-	<section id="projects">
-		<h3>Projects</h3>
-		<div class="project">
-			<img src="project-thumbnail.jpg" alt="Project Thumbnail">
-			<h4>Project Title</h4>
-			<p>Short description of the project.</p>
+	<nav>
+		<a href="#">
+			HOME
+		</a>
+		<a href="#">
+			PORTFOLIO
+		</a>
+		<a href="#">
+			RESUME
+		</a>
+		<a href="#">
+			ABOUT
+		</a>
+		<a href="#">
+			CONTACT
+		</a>
+	</nav>
+	<section class="portfolio">
+		<h2>
+			Featured Portfolio
+		</h2>
+		<div class="categories">
+			<a href="#">
+				All
+			</a>
+			<a href="#">
+				Branding
+			</a>
+			<a href="#">
+				Mockups
+			</a>
+			<a href="#">
+				Typography
+			</a>
+			<a href="#">
+				Photography
+			</a>
 		</div>
-		<div class="project">
-			<img src="project-thumbnail.jpg" alt="Project Thumbnail">
-			<h4>Project Title</h4>
-			<p>Short description of the project.</p>
-		</div>
-	</section>
-
-	<section id="workshops">
-		<h3>Workshops</h3>
-		<div class="workshop">
-			<img src="workshop-thumbnail.jpg" alt="Workshop Thumbnail">
-			<h4>Workshop Title 1</h4>
-		</div>
-		<div class="workshop">
-			<img src="workshop-thumbnail.jpg" alt="Workshop Thumbnail">
-			<h4>Workshop Title 2</h4>
-		</div>
-	</section>
-
-	<section id="events">
-		<h3>Events</h3>
-		<div class="event">
-			<img src="event-thumbnail.jpg" alt="Event Thumbnail">
-			<h4>Event Title 1</h4>
-		</div>
-		<div class="event">
-			<img src="event-thumbnail.jpg" alt="Event Thumbnail">
-			<h4>Event Title 2</h4>
-		</div>
-	</section>
-
-	<section id="skills">
-		<h3>Skills</h3>
-		<div class="skills">
-			<div class="skill">
-				<img src="path/to/logo1.png" alt="Logo 1">
-				<p>Language 1</p>
+		<div class="items">
+			<div class="item">
+				<img alt="Square Box Mockup" height="300"
+					src="https://storage.googleapis.com/a1aa/image/bDRanFDf4gyvHKFSXQjQNLceL5mNdyL2VuTSR4kDotVxV62TA.jpg"
+					width="300" />
+				<h3>
+					Square Box Mockup
+				</h3>
+				<p>
+					BRANDING
+				</p>
 			</div>
-			<div class="skill">
-				<img src="path/to/logo2.png" alt="Logo 2">
-				<p>Language 2</p>
+			<div class="item">
+				<img alt="Product Box Package Mockup" height="300"
+					src="https://storage.googleapis.com/a1aa/image/asu3OXGJ3W5TC1rWGnKf3y62RXIU20YHGTUYoPsB6fHrV62TA.jpg"
+					width="300" />
+				<h3>
+					Product Box Package Mockup
+				</h3>
+				<p>
+					BRANDING
+				</p>
 			</div>
-			<!-- Add more skills as needed -->
+			<div class="item">
+				<img alt="Creative Package Design" height="300"
+					src="https://storage.googleapis.com/a1aa/image/LJQ5sjA1ovJZAtmchiB7qB3faCrlyXSDzjebofFtnbYgr0tnA.jpg"
+					width="300" />
+				<h3>
+					Creative Package Design
+				</h3>
+				<p>
+					BRANDING
+				</p>
+			</div>
+			<div class="item">
+				<img alt="Packaging Brand" height="300"
+					src="https://storage.googleapis.com/a1aa/image/Yepe0jBMDjktu0XGueJPUIeSeXkeghXcywL8NvuBntXublu9E.jpg"
+					width="300" />
+				<h3>
+					Packaging Brand
+				</h3>
+				<p>
+					BRANDING
+				</p>
+			</div>
+			<div class="item">
+				<img alt="Isometric 3D Extrusion" height="300"
+					src="https://storage.googleapis.com/a1aa/image/Y7CTozlnsxbFDJssTGds7lRhBInGPDmzSFHtfae13eRSr0tnA.jpg"
+					width="300" />
+				<h3>
+					Isometric 3D Extrusion
+				</h3>
+				<p>
+					TYPOGRAPHY
+				</p>
+			</div>
+			<div class="item">
+				<img alt="White Space Photography" height="300"
+					src="https://storage.googleapis.com/a1aa/image/5ef1c2F8A9nlfI460yQR5BVk5qSCu5fgU658szKVqgP0WpbPB.jpg"
+					width="300" />
+				<h3>
+					White Space Photography
+				</h3>
+				<p>
+					PHOTOGRAPHY
+				</p>
+			</div>
 		</div>
 	</section>
-
-	<section id="contact">
-		<h3>Contact Info</h3>
-		<p>Email: your.email@example.com</p>
-		<p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">yourprofile</a></p>
+	<section class="resume">
+		<h2>
+			My Resume
+		</h2>
+		<div class="content">
+			<div class="section">
+				<h3>
+					Education
+				</h3>
+				<p>
+					<strong>
+						Master of Information Technology
+					</strong>
+					<br />
+					2015 - Present
+					<br />
+					University of California
+				</p>
+				<p>
+					<strong>
+						Bachelor of Computer Science
+					</strong>
+					<br />
+					2011 - 2015
+					<br />
+					University of California
+				</p>
+			</div>
+			<div class="section">
+				<h3>
+					Experience
+				</h3>
+				<p>
+					<strong>
+						Lead Product Designer
+					</strong>
+					<br />
+					2019 - Present
+					<br />
+					Facebook
+				</p>
+				<p>
+					<strong>
+						Product Designer
+					</strong>
+					<br />
+					2016 - 2019
+					<br />
+					Google
+				</p>
+			</div>
+		</div>
 	</section>
-
+	<section class="services">
+		<h2>
+			My Services
+		</h2>
+		<div class="content">
+			<div class="service">
+				<h3>
+					Web Design
+				</h3>
+				<p>
+					Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+					the blind texts.
+				</p>
+				<a href="#">
+					Learn More
+				</a>
+			</div>
+			<div class="service">
+				<h3>
+					Search Engine Optimization
+				</h3>
+				<p>
+					Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+					the blind texts.
+				</p>
+				<a href="#">
+					Learn More
+				</a>
+			</div>
+			<div class="service">
+				<h3>
+					Video Editing
+				</h3>
+				<p>
+					Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+					the blind texts.
+				</p>
+				<a href="#">
+					Learn More
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="blog">
+		<h2>
+			Blog on Medium
+		</h2>
+		<div class="content">
+			<div class="post">
+				<img alt="Creative Product Designer from Facebook" height="300"
+					src="https://storage.googleapis.com/a1aa/image/meoR33fZYIm0a0V8kXecoaiQ4Q7dTxZHlCUSVh0JzJ3Ur0tnA.jpg"
+					width="300" />
+				<h3>
+					Creative Product Designer from Facebook
+				</h3>
+				<p>
+					March 9, 2020
+				</p>
+			</div>
+			<div class="post">
+				<img alt="Creative Product Designer from Facebook" height="300"
+					src="https://storage.googleapis.com/a1aa/image/meoR33fZYIm0a0V8kXecoaiQ4Q7dTxZHlCUSVh0JzJ3Ur0tnA.jpg"
+					width="300" />
+				<h3>
+					Creative Product Designer from Facebook
+				</h3>
+				<p>
+					March 9, 2020
+				</p>
+			</div>
+			<div class="post">
+				<img alt="Creative Product Designer from Facebook" height="300"
+					src="https://storage.googleapis.com/a1aa/image/meoR33fZYIm0a0V8kXecoaiQ4Q7dTxZHlCUSVh0JzJ3Ur0tnA.jpg"
+					width="300" />
+				<h3>
+					Creative Product Designer from Facebook
+				</h3>
+				<p>
+					March 9, 2020
+				</p>
+			</div>
+		</div>
+	</section>
+	<section class="contact">
+		<h2>
+			Get In Touch
+		</h2>
+		<div class="content">
+			<div class="form">
+				<input placeholder="Your Name" type="text" />
+				<input placeholder="Your Email" type="email" />
+				<input placeholder="Your Phone" type="text" />
+				<textarea placeholder="Write a Message"></textarea>
+				<button>
+					Send Message
+				</button>
+			</div>
+			<div class="details">
+				<h3>
+					My Contact Details
+				</h3>
+				<p>
+					<strong>
+						Email:
+					</strong>
+					info@yourdomain.com
+				</p>
+				<p>
+					<strong>
+						Phone:
+					</strong>
+					+123 456 7890
+				</p>
+				<p>
+					<strong>
+						Address:
+					</strong>
+					123 Street, City, Country
+				</p>
+			</div>
+		</div>
+	</section>
 	<footer>
-		<p>&copy; 2023 Your Name. All rights reserved.</p>
+		<p>
+			© 2025. All rights reserved.
+		</p>
+		<div class="social">
+			<a href="#">
+				<i class="fab fa-facebook-f">
+				</i>
+			</a>
+			<a href="#">
+				<i class="fab fa-twitter">
+				</i>
+			</a>
+			<a href="https://www.linkedin.com/in/imran-ahmed-mac-uwindsor/">
+				<i class="fab fa-linkedin-in">
+				</i>
+			</a>
+			<a href="#">
+				<i class="fab fa-instagram">
+				</i>
+			</a>
+			<a href="https://github.com/cybercat37794">
+				<i class="fab fa-github">
+				</i>
+			</a>
+		</div>
 	</footer>
 </body>
 
