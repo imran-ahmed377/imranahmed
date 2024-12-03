@@ -131,6 +131,49 @@
 			color: #aaa;
 		}
 
+		.skills-container {
+			text-align: center;
+		}
+
+		.skills-title {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+
+		.skills-grid {
+			display: grid;
+			grid-template-columns: repeat(6, 1fr);
+			gap: 10px;
+		}
+
+		.skill-item {
+			background-color: #333;
+			border-radius: 50%;
+			padding: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.skill-item img {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+		}
+
+		@media (max-width: 768px) {
+			.skills-grid {
+				grid-template-columns: repeat(3, 1fr);
+			}
+		}
+
+		@media (max-width: 480px) {
+			.skills-grid {
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+
 		.about-section {
 			display: flex;
 			justify-content: center;
@@ -710,21 +753,99 @@
 		<h2>
 			SKILLS
 		</h2>
+		<div class="skills-grid">
+			<div class="skill-item">
+				<img alt="Python logo" height="50"
+					src="https://storage.googleapis.com/a1aa/image/AzSJfhIN62ydbyWAcI81u6jKbL55PSqFtQpQqy7bxQ9flT3TA.jpg"
+					width="50" />
+			</div>
+			<div class="skill-item">
+				<img alt="JavaScript logo" height="50"
+					src="https://storage.googleapis.com/a1aa/image/PojqVcMTZto9BNALPG6DsJvCPkx8f4RStyHCod5QBE67yp7JA.jpg"
+					width="50" />
+			</div>
+			<div class="skill-item">
+				<img alt="TensorFlow logo" height="50"
+					src="https://storage.googleapis.com/a1aa/image/8kLWAk9VsNp8Jpq1Qo1zzYcxCecpvfDfOtp6RCwWJpWOMnunA.jpg"
+					width="50" />
+			</div>
+			<div class="skill-item">
+				<img alt="Angular logo" height="50"
+					src="https://storage.googleapis.com/a1aa/image/PCWhQVHCg9JGHBf5GLSZ1vBu46Jh3FhjTMnYRTu4mmAAzp7JA.jpg"
+					width="50" />
+			</div>
+			<div class="skill-item">
+				<img alt="MongoDB logo" height="50"
+					src="https://storage.googleapis.com/a1aa/image/PWIajFxOZkbVPNPAlwfVMKelLvCpRKjMrguN0dnpsQiImT3TA.jpg"
+					width="50" />
+			</div>
+			<div class="skill-item">
+				<img alt="MySQL logo" height="50"
+					src="https://storage.googleapis.com/a1aa/image/14bKoIWGffs4XU36uLKeMQIQHZ1fM2iCHlFAeOTkZ9wCvc6eE.jpg"
+					width="50" />
+			</div>
+			<div class="skill-item">
+				<img alt="Git logo" height="50"
+					src="https://storage.googleapis.com/a1aa/image/2ouVfeKocCqf3pGwp0dm4hgQbs80v2hZsrJJ7ERvRGS0LnunA.jpg"
+					width="50" />
+			</div>
+			<div class="skill-item">
+				<img alt="Jira logo" height="50"
+					src="https://storage.googleapis.com/a1aa/image/x2S1CfE7c1UoWiB9L7xWXP6NweMxH8dI0UytI6gMJ5w7lT3TA.jpg"
+					width="50" />
+			</div>
+			<div class="skill-item">
+				<img alt="React logo" height="50"
+					src="https://storage.googleapis.com/a1aa/image/tsjXsxI7og5iC1hYpN4S8icZRe7qn19qO0fPKCleYdNEMnunA.jpg"
+					width="50" />
+			</div>
+			<div class="skill-item">
+				<img alt="Redux logo" height="50"
+					src="https://storage.googleapis.com/a1aa/image/CRSE3LJISvYLKNbLhqlbPLcdfPliOBtdaPvhI2N676KCzp7JA.jpg"
+					width="50" />
+			</div>
+			<div class="skill-item">
+				<img alt="Node.js logo" height="50"
+					src="https://storage.googleapis.com/a1aa/image/PeX9JrXSXDVzC6LzJawRQ0E6KbhOC3oBFOHbxcUMWx6Bzp7JA.jpg"
+					width="50" />
+			</div>
+			<div class="skill-item">
+				<img alt="Django logo" height="50"
+					src="https://storage.googleapis.com/a1aa/image/lKfZF7Hw0m2bRaPDlLdoL4IVAQjI26BJImT1WxzOSRjAzp7JA.jpg"
+					width="50" />
+			</div>
+			<div class="skill-item">
+				<img alt="Bootstrap logo" height="50"
+					src="https://storage.googleapis.com/a1aa/image/0Q1uQ7dfkP17YCYkDNzFTAtDqgfPo6saqvhB8V7Nyhg8lT3TA.jpg"
+					width="50" />
+			</div>
+			<div class="skill-item">
+				<img alt="Tailwind CSS logo" height="50"
+					src="https://storage.googleapis.com/a1aa/image/eoMdFju7WpSFBCVJ1oIaNEPQM3i0362c45DRuB8Up16elT3TA.jpg"
+					width="50" />
+			</div>
+			<div class="skill-item">
+				<img alt="Svelte logo" height="50"
+					src="https://storage.googleapis.com/a1aa/image/QlsGCyculmYSCxBpQzZJzel8TapuzJHnCeSsMLOzGStFmT3TA.jpg"
+					width="50" />
+			</div>
+		</div>
+
 		<div class="content">
 			<div class="post">
-				<img alt="Creative Product Designer from Facebook" height="50"
+				<img alt="Creative Product Designer from Facebook" height="300"
 					src="https://storage.googleapis.com/a1aa/image/meoR33fZYIm0a0V8kXecoaiQ4Q7dTxZHlCUSVh0JzJ3Ur0tnA.jpg"
-					width="50" />
+					width="300" />
 			</div>
 			<div class="post">
-				<img alt="Creative Product Designer from Facebook" height="50"
+				<img alt="Creative Product Designer from Facebook" height="300"
 					src="https://storage.googleapis.com/a1aa/image/meoR33fZYIm0a0V8kXecoaiQ4Q7dTxZHlCUSVh0JzJ3Ur0tnA.jpg"
-					width="50" />
+					width="300" />
 			</div>
 			<div class="post">
-				<img alt="Creative Product Designer from Facebook" height="50"
+				<img alt="Creative Product Designer from Facebook" height="300"
 					src="https://storage.googleapis.com/a1aa/image/meoR33fZYIm0a0V8kXecoaiQ4Q7dTxZHlCUSVh0JzJ3Ur0tnA.jpg"
-					width="50" />
+					width="300" />
 			</div>
 		</div>
 	</section>
