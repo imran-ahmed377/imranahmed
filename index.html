@@ -255,20 +255,40 @@
 			font-size: 1.5em;
 		}
 
-		a.learn-more-button {
+		.item {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 100%;
+		}
+
+		.item img {
+			align-self: center;
+		}
+
+		.item h3 {
+			margin-top: 10px;
+		}
+
+		.item p {
+			flex-grow: 1;
+		}
+
+		.learn-more-button {
 			display: inline-block;
 			padding: 10px 20px;
 			font-size: 16px;
 			color: white;
-			background-color: #a9b9cb;
+			background-color: #007BFF;
 			border: none;
 			border-radius: 5px;
 			text-decoration: none;
 			text-align: center;
+			margin-top: 10px;
 		}
 
-		a.learn-more-button:hover {
-			background-color: #a9b9cb;
+		.learn-more-button:hover {
+			background-color: #0056b3;
 		}
 	</style>
 </head>
