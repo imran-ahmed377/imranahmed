@@ -28,24 +28,59 @@
 
 		header {
 			text-align: center;
-			padding: 50px 0;
+			padding: 100px 20px;
 			background-color: #333;
+			background-image: url('https://github.com/imran-ahmed377/imranahmed/blob/master/page%20graphics/website_background_BnW3.jpg?raw=true');
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			min-height: 500px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			position: relative;
 		}
 
-		header img {
-			width: 100%;
-			max-height: 500px;
-			object-fit: cover;
+		header::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(0, 0, 0, 0.4);
+			z-index: 1;
+		}
+
+		header h1,
+		header p {
+			position: relative;
+			z-index: 2;
 		}
 
 		header h1 {
-			font-size: 3em;
+			font-size: clamp(1.5em, 8vw, 3em);
 			margin: 20px 0 10px;
 		}
 
 		header p {
-			font-size: 1.2em;
-			color: #aaa;
+			font-size: clamp(0.9em, 4vw, 1.2em);
+			color: #fff;
+		}
+
+		@media (max-width: 768px) {
+			header {
+				min-height: 350px;
+				padding: 60px 20px;
+			}
+		}
+
+		@media (max-width: 480px) {
+			header {
+				min-height: 300px;
+				padding: 40px 20px;
+			}
 		}
 
 		nav {
@@ -55,6 +90,20 @@
 			text-align: center;
 			padding: 20px 0;
 			background-color: #333;
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+			animation: slideDown 0.5s ease;
+		}
+
+		@keyframes slideDown {
+			from {
+				transform: translateY(-100%);
+				opacity: 0;
+			}
+
+			to {
+				transform: translateY(0);
+				opacity: 1;
+			}
 		}
 
 		nav a {
@@ -62,10 +111,29 @@
 			margin: 0 15px;
 			text-decoration: none;
 			font-size: 0.75em;
+			position: relative;
+			transition: color 0.3s ease;
+			display: inline-block;
+		}
+
+		nav a::before {
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 2px;
+			bottom: -5px;
+			left: 50%;
+			background-color: #a8c66c;
+			transition: all 0.3s ease;
+			transform: translateX(-50%);
 		}
 
 		nav a:hover {
 			color: #a8c66c;
+		}
+
+		nav a:hover::before {
+			width: 100%;
 		}
 
 		.portfolio,
@@ -290,16 +358,13 @@
 
 <body>
 	<header>
-		<img alt="Website Background" height="500"
-			src="https://github.com/imran-ahmed377/imranahmed/blob/master/page%20graphics/website_background_BnW5.jpg?raw=true"
-			width="1200" />
 		<h1>
 			Hello, I'm
 			<br />
 			Imran Ahmed
 		</h1>
 		<p>
-			AI &amp; ML PRACTITIONER
+			AI &amp; ML PRACTITIONER | DATA SCIENTIST | SOFTWARE DEVELOPER
 		</p>
 	</header>
 	<nav>
@@ -1452,11 +1517,10 @@
 				</span>
 			</h2>
 			<p>
-				Imran Ahmed, he/him, born in Dhaka, Bangladesh, is a current student at the School of Computer Science,
-				University of Windsor, Ontario, Canada. He spent his early childhood in KSA. He completed his Bachelor's
-				degree in Computer Science and Engineering from American International Univeristy Bangladesh Majoring in
-				Computational Theory.
-
+				Imran Ahmed, he/him, born in Dhaka, Bangladesh, completed his post graduation from the School of
+				Computer Science, University of Windsor, Ontario, Canada. He spent his early childhood in KSA. He
+				completed his Bachelor's degree in Computer Science and Engineering from American International
+				Univeristy Bangladesh Majoring in Computational Theory.
 			</p>
 			<p>
 				Upon his graduation, he worked with his thesis supervisor in research works in AI and Machine Learning
@@ -1512,14 +1576,14 @@
 					<strong>
 						Address:
 					</strong>
-					Windsor, Ontario, Canada
+					Toronto, Ontario, Canada
 				</p>
 			</div>
 		</div>
 	</section>
 	<footer>
 		<p>
-			© 2025. All rights reserved.
+			© 2026. All rights reserved.
 		</p>
 		<div class="social">
 			<!-- <a href="#">
