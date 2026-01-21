@@ -446,6 +446,68 @@
 
 		/* ===== END PROFESSIONAL EXPERIENCE SECTION ===== */
 
+		/* ===== TESTIMONIALS SECTION ===== */
+		.testimonials-section {
+			padding: 40px 20px;
+			background-color: #1c1c1c;
+		}
+
+		.testimonials-section h2 {
+			text-align: center;
+			color: #fff;
+			margin-bottom: 40px;
+			font-size: clamp(1.5em, 5vw, 2.5em);
+		}
+
+		.testimonials-container {
+			display: grid;
+			grid-template-columns: auto-fit minmax(350px, 1fr);
+			gap: 30px;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
+		.testimonial-card {
+			background-color: #444;
+			padding: 25px;
+			border-left: 4px solid #a8c66c;
+			border-radius: 5px;
+			transition: all 0.3s ease;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.testimonial-card:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+		}
+
+		.testimonial-text {
+			color: #fff;
+			font-style: italic;
+			margin-bottom: 15px;
+			line-height: 1.6;
+		}
+
+		.testimonial-author {
+			color: #a8c66c;
+			font-weight: 700;
+			margin-top: auto;
+		}
+
+		.testimonial-role {
+			color: #ccc;
+			font-size: 0.9em;
+		}
+
+		@media (max-width: 768px) {
+			.testimonials-container {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		/* ===== END TESTIMONIALS SECTION ===== */
+
 		/* ===== ACADEMICS SECTION ===== */
 		.academics-section {
 			padding: 50px 20px;
@@ -530,11 +592,14 @@
 		<a href="#projects">
 			PROJECTS
 		</a>
-		<a href="#reports_n_publications">
-			REPORTS & PUBLICATIONS
-		</a>
 		<a href="#experience_section">
 			PROFESSIONAL EXPERIENCE
+		</a>
+		<a href="#testimonials_section">
+			TESTIMONIALS
+		</a>
+		<a href="#reports_n_publications">
+			REPORTS & PUBLICATIONS
 		</a>
 		<a href="#academics_section">
 			ACADEMICS
@@ -745,6 +810,101 @@
 				</div>
 			</div>
 	</section>
+	<section class="experience-detailed" id="experience_section">
+		<h2>
+			PROFESSIONAL EXPERIENCE
+		</h2>
+		<div class="experience-container">
+			<div class="experience-card">
+				<h3 class="job-title">Meta Sales Specialist</h3>
+				<p class="job-duration">Oct 2025 - Jan 2026</p>
+				<p class="job-company">2020 Companies, Windsor, Ontario, Canada</p>
+				<ul class="job-responsibilities">
+					<li>Delivered interactive in-store demonstrations for innovative Meta products including Meta Quest
+						3, Quest 3S, and Ray-Ban Meta smart glasses (Gen 1 & Gen 2) at Best Buy.</li>
+					<li>Educated customers on product features, assisted with setup guidance, and provided tailored
+						recommendations to drive engagement and sales.</li>
+					<li>Collected customer feedback through surveys to support product research and improve user
+						experience.</li>
+					<li>Supported merchandising standards, and collaborated with Best Buy teams to enhance brand
+						awareness and product knowledge within the retail environment.</li>
+				</ul>
+			</div>
+			<div class="experience-card">
+				<h3 class="job-title">Data Scientist (Master's Co-op)</h3>
+				<p class="job-duration">Oct 2024 - Aug 2025</p>
+				<p class="job-company">Exeevo, Toronto, Ontario, Canada</p>
+				<ul class="job-responsibilities">
+					<li>Designed and deployed an LLM-powered AI voice assistant leveraging Azure Cognitive Services and
+						Retrieval-Augmented Generation (RAG) to enable secure, context-aware enterprise workflows.</li>
+					<li>Delivered production-grade machine learning and LLM solutions supporting automation and
+						intelligent decision-making across internal teams.</li>
+					<li>Built and validated data pipelines, integrated REST APIs, and supported containerized deployment
+						using CI/CD workflows for scalable systems.</li>
+				</ul>
+			</div>
+			<div class="experience-card">
+				<h3 class="job-title">AI Research Intern (Collaborative Project)</h3>
+				<p class="job-duration">Oct 2024 - Aug 2025</p>
+				<p class="job-company">MealLens AI, Windsor, Ontario, Canada</p>
+				<ul class="job-responsibilities">
+					<li>Collaborated on the design of a large-scale computer vision pipeline for automated meal
+						recognition using a 200GB+ dataset.</li>
+					<li>Implemented annotation and feature representation techniques with Segment Anything Model
+						(SAM/SAM2) and OpenAI CLIP to enhance accuracy for meal and ingredient labeling.</li>
+				</ul>
+			</div>
+			<div class="experience-card">
+				<h3 class="job-title">AI Prompt Response Writer (Remote)</h3>
+				<p class="job-duration">September 2024 - December 2024</p>
+				<p class="job-company">Telus Digital</p>
+				<ul class="job-responsibilities">
+					<li>Developed, wrote, and curated high-quality prompts and responses within the Computer Science
+						domain, ensuring clarity, accuracy, and relevance.</li>
+					<li>Collaborated with cross-functional teams to enhance dataset quality, ensuring it aligns with
+						project goals and standards.</li>
+					<li>Conducted thorough content reviews, analysis, and refinement to ensure consistency in tone,
+						adherence to guidelines, and alignment with project objectives.</li>
+				</ul>
+			</div>
+			<div class="experience-card">
+				<h3 class="job-title">Junior Data Engineer</h3>
+				<p class="job-duration">January 2023 - August 2024</p>
+				<p class="job-company">Hydroque, Dhaka, Bangladesh</p>
+				<ul class="job-responsibilities">
+					<li>Designed and optimized scalable ETL pipelines processing over 1M annual water quality data
+						points.</li>
+					<li>Developed real-time Tableau dashboards to deliver operational analytics and visual insights for
+						stakeholders.</li>
+				</ul>
+			</div>
+			<div class="experience-card">
+				<h3 class="job-title">Student Intern</h3>
+				<p class="job-duration">May 2022 - Aug 2022</p>
+				<p class="job-company">American International University Bangladesh</p>
+				<ul class="job-responsibilities">
+					<li>Assisted faculty members in preparing learning materials and attended to student queries of the
+						assigned faculty member.</li>
+					<li>Helped the assigned faculty member in research works and tracked course progress-assessment
+						dates, deadlines, etc.</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="testimonials-section" id="testimonials_section">
+		<h2>
+			TESTIMONIALS
+		</h2>
+		<div class="testimonials-container">
+			<div class="testimonial-card">
+				<p class="testimonial-text">"During the internship program he has been exposed to different areas of the
+					function and displayed a commitment to learn and contribute.
+					We wish him the best for all future endeavours and a successful career."</p>
+				<p class="testimonial-author">— Derek Evans</p>
+				<p class="testimonial-role">Chief Executive Officer, Exeevo</p>
+			</div>
+		</div>
+	</section>
 	<section class="portfolio" id="reports_n_publications">
 		<h2>
 			REPORTS & PUBLICATIONS
@@ -825,63 +985,6 @@
 						proposed solutions.
 					</p>
 				</div>
-			</div>
-		</div>
-	</section>
-	<section class="experience-detailed" id="experience_section">
-		<h2>
-			PROFESSIONAL EXPERIENCE
-		</h2>
-		<div class="experience-container">
-			<div class="experience-card">
-				<h3 class="job-title">Data Scientist (Master's Co-op)</h3>
-				<p class="job-duration">Oct 2024 - Aug 2025</p>
-				<p class="job-company">Exeevo, Toronto, Ontario, Canada</p>
-				<ul class="job-responsibilities">
-					<li>Developed and optimized data pipelines processing 50GB+ datasets</li>
-					<li>Built machine learning models for predictive analytics</li>
-					<li>Collaborated with cross-functional teams on data-driven solutions</li>
-				</ul>
-			</div>
-			<div class="experience-card">
-				<h3 class="job-title">AI Research Intern (Collaborative Project)</h3>
-				<p class="job-duration">Oct 2024 - Aug 2025</p>
-				<p class="job-company">MealLens AI, Windsor, Ontario, Canada</p>
-				<ul class="job-responsibilities">
-					<li>Add responsibility 1</li>
-					<li>Add responsibility 2</li>
-					<li>Add responsibility 3</li>
-				</ul>
-			</div>
-			<div class="experience-card">
-				<h3 class="job-title">AI Prompt Response Writer (Remote)</h3>
-				<p class="job-duration">September 2024 - December 2024</p>
-				<p class="job-company">Telus Digital</p>
-				<ul class="job-responsibilities">
-					<li>Add responsibility 1</li>
-					<li>Add responsibility 2</li>
-					<li>Add responsibility 3</li>
-				</ul>
-			</div>
-			<div class="experience-card">
-				<h3 class="job-title">Junior Data Engineer</h3>
-				<p class="job-duration">January 2023 - August 2024</p>
-				<p class="job-company">Hydroque, Dhaka, Bangladesh</p>
-				<ul class="job-responsibilities">
-					<li>Add responsibility 1</li>
-					<li>Add responsibility 2</li>
-					<li>Add responsibility 3</li>
-				</ul>
-			</div>
-			<div class="experience-card">
-				<h3 class="job-title">Student Intern</h3>
-				<p class="job-duration">May 2022 - Aug 2022</p>
-				<p class="job-company">American International University Bangladesh</p>
-				<ul class="job-responsibilities">
-					<li>Add responsibility 1</li>
-					<li>Add responsibility 2</li>
-					<li>Add responsibility 3</li>
-				</ul>
 			</div>
 		</div>
 	</section>
