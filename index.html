@@ -1000,7 +1000,7 @@
 			</div>
 			<div class="education-card">
 				<h3 class="degree-title">Bachelor of Science in Computer Science and Engineering</h3>
-				<p class="study-duration">2018 - 2022</p>
+				<p class="study-duration">May 2018 - May 2022</p>
 				<p class="university-name">American International University Bangladesh</p>
 			</div>
 		</div>
@@ -1845,7 +1845,7 @@
 	</section>
 	<footer>
 		<p>
-			© 2026. All rights reserved.
+			© <span id="year"></span>. All rights reserved.
 		</p>
 		<div class="social">
 			<!-- <a href="#">
@@ -1870,6 +1870,9 @@
 			</a>
 		</div>
 	</footer>
+	<script>
+		document.getElementById('year').textContent = new Date().getFullYear();
+	</script>
 </body>
 
 </html>
