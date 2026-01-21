@@ -360,6 +360,155 @@
 			transform: translateY(-2px);
 			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 		}
+
+		/* ===== PROFESSIONAL EXPERIENCE SECTION ===== */
+		.experience-detailed {
+			padding: 50px 20px;
+			text-align: center;
+			background-color: #1c1c1c;
+		}
+
+		.experience-detailed h2 {
+			font-size: 2em;
+			margin-bottom: 40px;
+			color: #fff;
+		}
+
+		.experience-container {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+			gap: 25px;
+			max-width: 1400px;
+			margin: 0 auto;
+		}
+
+		.experience-card {
+			background-color: #444;
+			padding: 25px;
+			border-radius: 8px;
+			text-align: left;
+			border-top: 4px solid #a8c66c;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+		}
+
+		.experience-card:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 8px 16px rgba(168, 198, 108, 0.2);
+		}
+
+		.job-title {
+			font-size: 1.3em;
+			color: #a8c66c;
+			margin: 0 0 8px 0;
+			font-weight: 600;
+		}
+
+		.job-duration {
+			font-size: 0.9em;
+			color: #888;
+			margin: 0 0 5px 0;
+			font-weight: 500;
+		}
+
+		.job-company {
+			font-size: 0.95em;
+			color: #aaa;
+			margin: 0 0 15px 0;
+		}
+
+		.job-responsibilities {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		.job-responsibilities li {
+			font-size: 0.9em;
+			color: #bbb;
+			margin: 8px 0 8px 20px;
+			line-height: 1.6;
+			position: relative;
+		}
+
+		.job-responsibilities li:before {
+			content: "▸";
+			position: absolute;
+			left: -15px;
+			color: #a8c66c;
+			font-weight: bold;
+		}
+
+		@media (max-width: 768px) {
+			.experience-container {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		/* ===== END PROFESSIONAL EXPERIENCE SECTION ===== */
+
+		/* ===== ACADEMICS SECTION ===== */
+		.academics-section {
+			padding: 50px 20px;
+			text-align: center;
+			background-color: #1c1c1c;
+		}
+
+		.academics-section h2 {
+			font-size: 2em;
+			margin-bottom: 40px;
+			color: #fff;
+		}
+
+		.academics-container {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+			gap: 25px;
+			max-width: 1400px;
+			margin: 0 auto;
+		}
+
+		.education-card {
+			background-color: #444;
+			padding: 30px 25px;
+			border-radius: 8px;
+			text-align: center;
+			border-top: 4px solid #a8c66c;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+		}
+
+		.education-card:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 8px 16px rgba(168, 198, 108, 0.2);
+		}
+
+		.degree-title {
+			font-size: 1.3em;
+			color: #a8c66c;
+			margin: 0 0 12px 0;
+			font-weight: 600;
+			line-height: 1.5;
+		}
+
+		.study-duration {
+			font-size: 0.9em;
+			color: #888;
+			margin: 0 0 8px 0;
+			font-weight: 500;
+		}
+
+		.university-name {
+			font-size: 0.95em;
+			color: #bbb;
+			margin: 0;
+		}
+
+		@media (max-width: 768px) {
+			.academics-container {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		/* ===== END ACADEMICS SECTION ===== */
 	</style>
 </head>
 
@@ -384,8 +533,11 @@
 		<a href="#reports_n_publications">
 			REPORTS & PUBLICATIONS
 		</a>
-		<a href="#academics_n_career_history">
-			ACADEMICS & CAREER HISTORY
+		<a href="#experience_section">
+			PROFESSIONAL EXPERIENCE
+		</a>
+		<a href="#academics_section">
+			ACADEMICS
 		</a>
 		<a href="#course_n_certifications">
 			COURSE & CERTIFICATION
@@ -676,83 +828,77 @@
 			</div>
 		</div>
 	</section>
-	<section class="academics_n_career" id="academics_n_career_history">
+	<section class="experience-detailed" id="experience_section">
 		<h2>
-			ACADEMICS & CAREER HISTORY
+			PROFESSIONAL EXPERIENCE
 		</h2>
-		<div class="content">
-			<div class="section">
-				<h3>
-					Education
-				</h3>
-				<p>
-					<strong>
-						Master of Applied Computing
-					</strong>
-					<br />
-					September 2024 - December 2025
-					<br />
-					University of Windsor
-				</p>
-				<p>
-					<strong>
-						Bachelor of Science in Computer Science and Engineering
-					</strong>
-					<br />
-					2018 - 2022
-					<br />
-					American International University Bangladesh
-				</p>
+		<div class="experience-container">
+			<div class="experience-card">
+				<h3 class="job-title">Data Scientist (Master's Co-op)</h3>
+				<p class="job-duration">Oct 2024 - Aug 2025</p>
+				<p class="job-company">Exeevo, Toronto, Ontario, Canada</p>
+				<ul class="job-responsibilities">
+					<li>Developed and optimized data pipelines processing 50GB+ datasets</li>
+					<li>Built machine learning models for predictive analytics</li>
+					<li>Collaborated with cross-functional teams on data-driven solutions</li>
+				</ul>
 			</div>
-			<div class="section">
-				<h3>
-					Experience
-				</h3>
-				<p>
-					<strong>
-						Data Scientist (Master's Co-op)
-					</strong>
-					<br />
-					Oct 2024 - Aug 2025
-					<br />
-					Exeevo, Toronto, Ontario, Canada
-				</p>
-				<p>
-					<strong>
-						AI Research Intern (Collaborative Project)
-					</strong>
-					<br />
-					Oct 2024 - Aug 2025
-					<br />
-					MealLens AI, Windsor, Ontario, Canada
-				</p>
-				<p>
-					<strong>
-						AI Prompt Response Writer (Remote)
-					</strong>
-					<br />
-					September 2024 - December 2024
-					<br />
-					Telus Digital
-				</p>
-				<p>
-					<strong>
-						Junior Data Engineer
-					</strong>
-					<br />
-					January 2023 - August 2024
-					<br />
-					Hydroque, Dhaka, Bangladesh
-				</p>
-				<p>
-					<strong>
-						Student Intern
-					</strong>
-					<br />
-					May 2022 - Aug 2022
-					<br />
-					American International University Bangladesh
-				</p>
+			<div class="experience-card">
+				<h3 class="job-title">AI Research Intern (Collaborative Project)</h3>
+				<p class="job-duration">Oct 2024 - Aug 2025</p>
+				<p class="job-company">MealLens AI, Windsor, Ontario, Canada</p>
+				<ul class="job-responsibilities">
+					<li>Add responsibility 1</li>
+					<li>Add responsibility 2</li>
+					<li>Add responsibility 3</li>
+				</ul>
+			</div>
+			<div class="experience-card">
+				<h3 class="job-title">AI Prompt Response Writer (Remote)</h3>
+				<p class="job-duration">September 2024 - December 2024</p>
+				<p class="job-company">Telus Digital</p>
+				<ul class="job-responsibilities">
+					<li>Add responsibility 1</li>
+					<li>Add responsibility 2</li>
+					<li>Add responsibility 3</li>
+				</ul>
+			</div>
+			<div class="experience-card">
+				<h3 class="job-title">Junior Data Engineer</h3>
+				<p class="job-duration">January 2023 - August 2024</p>
+				<p class="job-company">Hydroque, Dhaka, Bangladesh</p>
+				<ul class="job-responsibilities">
+					<li>Add responsibility 1</li>
+					<li>Add responsibility 2</li>
+					<li>Add responsibility 3</li>
+				</ul>
+			</div>
+			<div class="experience-card">
+				<h3 class="job-title">Student Intern</h3>
+				<p class="job-duration">May 2022 - Aug 2022</p>
+				<p class="job-company">American International University Bangladesh</p>
+				<ul class="job-responsibilities">
+					<li>Add responsibility 1</li>
+					<li>Add responsibility 2</li>
+					<li>Add responsibility 3</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="academics-section" id="academics_section">
+		<h2>
+			ACADEMICS
+		</h2>
+		<div class="academics-container">
+			<div class="education-card">
+				<h3 class="degree-title">Master of Applied Computing</h3>
+				<p class="study-duration">September 2024 - December 2025</p>
+				<p class="university-name">University of Windsor</p>
+			</div>
+			<div class="education-card">
+				<h3 class="degree-title">Bachelor of Science in Computer Science and Engineering</h3>
+				<p class="study-duration">2018 - 2022</p>
+				<p class="university-name">American International University Bangladesh</p>
 			</div>
 		</div>
 	</section>
