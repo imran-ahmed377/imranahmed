@@ -460,3 +460,191 @@ a.learn-more-button:hover {
         grid-template-columns: 1fr;
     }
 }
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Apply fade-in to sections */
+.portfolio,
+.academics_n_career,
+.services,
+.course_n_cert,
+.contact {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.portfolio h2,
+.academics_n_career h2,
+.services h2,
+.course_n_cert h2,
+.contact h2 {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Apply fade-in and slide up to cards */
+.portfolio .item,
+.academics-container .education-card,
+.services .service,
+.course_n_cert .post,
+.contact .form,
+.contact .details,
+.experience-card,
+.testimonial-card {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Stagger animation delays for portfolio items */
+.portfolio .item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.portfolio .item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.portfolio .item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.portfolio .item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.portfolio .item:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.portfolio .item:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.portfolio .item:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.portfolio .item:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+.portfolio .item:nth-child(9) {
+    animation-delay: 0.9s;
+}
+
+.portfolio .item:nth-child(10) {
+    animation-delay: 1s;
+}
+
+/* Stagger animation delays for education cards */
+.education-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.education-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+/* Stagger animation delays for service items */
+.services .service:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.services .service:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.services .service:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+/* Stagger animation delays for course items */
+.course_n_cert .post:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.course_n_cert .post:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.course_n_cert .post:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.course_n_cert .post:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+/* Stagger animation delays for contact items */
+.contact .form {
+    animation-delay: 0.1s;
+}
+
+.contact .details {
+    animation-delay: 0.2s;
+}
+
+/* Stagger animation delays for experience cards */
+.experience-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.experience-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.experience-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.experience-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.experience-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.experience-card:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+/* Stagger animation delays for testimonial cards */
+.testimonial-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.testimonial-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
