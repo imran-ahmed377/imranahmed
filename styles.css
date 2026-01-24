@@ -1,0 +1,462 @@
+/* Portfolio Stylesheet - Minified and Optimized */
+
+/* ===== GLOBAL STYLES ===== */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===== PORTFOLIO & SECTION STYLES ===== */
+.portfolio,
+.academics_n_career,
+.services,
+.course_n_cert,
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.portfolio h2,
+.academics_n_career h2,
+.services h2,
+.course_n_cert h2,
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.portfolio .categories,
+.portfolio .items,
+.academics_n_career .content,
+.services .content,
+.course_n_cert .content,
+.contact .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio .categories a,
+.services .content .service,
+.course_n_cert .content .post,
+.contact .content .form,
+.contact .content .details {
+    background-color: #444444;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1 1 300px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.portfolio .items .item,
+.academics_n_career .content .section,
+.services .content .service,
+.course_n_cert .content .post {
+    background-color: #444;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1 1 300px;
+    max-width: 300px;
+}
+
+.portfolio .items .item img,
+.course_n_cert .content .post img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.portfolio .items .item h3,
+.academics_n_career .content .section h3,
+.services .content .service h3,
+.course_n_cert .content .post h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.portfolio .items .item p,
+.academics_n_career .content .section p,
+.services .content .service p,
+.course_n_cert .content .post p {
+    font-size: 1em;
+    color: #aaa;
+}
+
+.project-date {
+    font-size: 0.85em;
+    color: #a8c66c;
+    margin: 5px 0 10px 0;
+    font-weight: 700;
+}
+
+/* ===== SKILLS SECTION ===== */
+.skills-container {
+    text-align: center;
+}
+
+.skills-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+
+.skill-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ===== ABOUT SECTION ===== */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.about-section img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 50px;
+}
+
+.about-section .about-text {
+    max-width: 500px;
+}
+
+.about-section .about-text h2 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.about-section .about-text h2 span {
+    font-weight: 700;
+}
+
+.about-section .about-text p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.about-section .about-text .buttons {
+    margin-top: 20px;
+}
+
+.about-section .about-text .buttons a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #a8c66c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.about-section .about-text .buttons a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* ===== CONTACT FORM ===== */
+.contact .content .form input,
+.contact .content .form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact .content .form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+}
+
+footer p {
+    margin: 10px 0;
+    color: #aaa;
+}
+
+footer .social a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .social a:hover {
+    color: #a8c66c;
+    transform: scale(1.1);
+}
+
+footer .social svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* ===== BUTTONS ===== */
+a.learn-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #a8c66c;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+a.learn-more-button:hover {
+    background-color: #fff;
+    color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== PROFESSIONAL EXPERIENCE SECTION ===== */
+.experience-detailed {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #1c1c1c;
+}
+
+.experience-detailed h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.experience-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.experience-card {
+    background-color: #444;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: left;
+    border-top: 4px solid #a8c66c;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(168, 198, 108, 0.2);
+}
+
+.job-title {
+    font-size: 1.3em;
+    color: #a8c66c;
+    margin: 0 0 8px 0;
+    font-weight: 600;
+}
+
+.job-duration {
+    font-size: 0.9em;
+    color: #888;
+    margin: 0 0 5px 0;
+    font-weight: 500;
+}
+
+.job-company {
+    font-size: 0.95em;
+    color: #aaa;
+    margin: 0 0 15px 0;
+}
+
+.job-responsibilities {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.job-responsibilities li {
+    font-size: 0.9em;
+    color: #bbb;
+    margin: 8px 0 8px 20px;
+    line-height: 1.6;
+    position: relative;
+}
+
+.job-responsibilities li:before {
+    content: "▸";
+    position: absolute;
+    left: -15px;
+    color: #a8c66c;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .experience-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== TESTIMONIALS SECTION ===== */
+.testimonials-section {
+    padding: 40px 20px;
+    background-color: #1c1c1c;
+}
+
+.testimonials-section h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: clamp(1.5em, 5vw, 2.5em);
+}
+
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background-color: #444;
+    padding: 25px;
+    border-left: 4px solid #a8c66c;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.testimonial-text {
+    color: #fff;
+    font-style: italic;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.testimonial-author {
+    color: #a8c66c;
+    font-weight: 700;
+    margin-top: auto;
+}
+
+.testimonial-role {
+    color: #ccc;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .testimonials-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== ACADEMICS SECTION ===== */
+.academics-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #1c1c1c;
+}
+
+.academics-section h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.academics-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.education-card {
+    background-color: #444;
+    padding: 30px 25px;
+    border-radius: 8px;
+    text-align: center;
+    border-top: 4px solid #a8c66c;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(168, 198, 108, 0.2);
+}
+
+.degree-title {
+    font-size: 1.3em;
+    color: #a8c66c;
+    margin: 0 0 12px 0;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.study-duration {
+    font-size: 0.9em;
+    color: #888;
+    margin: 0 0 8px 0;
+    font-weight: 500;
+}
+
+.university-name {
+    font-size: 0.95em;
+    color: #bbb;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .academics-container {
+        grid-template-columns: 1fr;
+    }
+}
