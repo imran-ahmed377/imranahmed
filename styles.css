@@ -98,37 +98,97 @@ html {
 }
 
 /* ===== SKILLS SECTION ===== */
-.skills-container {
-    text-align: center;
-}
-
-.skills-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 10px;
+    gap: 20px 20px;
+    row-gap: 70px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skill-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: scale(1.15);
 }
 
 .skill-item img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    transition: filter 0.3s ease;
+}
+
+.skill-item:hover img {
+    filter: drop-shadow(0 0 8px rgba(168, 198, 108, 0.8));
+}
+
+/* Tooltip on hover */
+.skill-item::after {
+    content: attr(data-skill);
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #a8c66c;
+    color: #1c1c1c;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.85em;
+    font-weight: 600;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 100;
+}
+
+.skill-item:hover::after {
+    opacity: 1;
 }
 
 @media (max-width: 768px) {
     .skills-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px 15px;
+        row-gap: 65px;
+    }
+
+    .skill-item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .skill-item::after {
+        font-size: 0.75em;
+        padding: 5px 10px;
+        bottom: -32px;
     }
 }
 
 @media (max-width: 480px) {
     .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px 12px;
+        row-gap: 60px;
+    }
+
+    .skill-item img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .skill-item::after {
+        font-size: 0.7em;
+        padding: 4px 8px;
+        bottom: -28px;
     }
 }
 
