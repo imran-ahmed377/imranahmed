@@ -27,8 +27,8 @@ html {
 .services h2,
 .course_n_cert h2,
 .contact h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: clamp(1.5em, 5vw, 2.5em);
+    margin-bottom: 40px;
 }
 
 .portfolio .categories,
@@ -468,7 +468,7 @@ a.learn-more-button:hover {
 }
 
 .academics-section h2 {
-    font-size: 2em;
+    font-size: clamp(1.5em, 5vw, 2.5em);
     margin-bottom: 40px;
     color: #fff;
 }
